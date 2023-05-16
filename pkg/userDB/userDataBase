@@ -1,4 +1,4 @@
-package userDataBase
+package userDataBaseP
 
 import "github.com/google/uuid"
 
@@ -9,4 +9,4 @@ type User struct {
 	Friends []string  `json:"friends"`
 }
 
-var UserDataBase map[uuid.UUID]User
+var UserDataBaseP map[uuid.UUID]User
