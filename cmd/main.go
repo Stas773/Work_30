@@ -25,7 +25,7 @@ func main() {
 	router.Post("/make_friends", makeFriends.MakeFriends)
 	router.Get("/users/{userId}", getUser.GetUser)
 	router.Get("/users", getAllUsers.GetAllUsers)
-	router.Get("/users/friends/{userId}", getUserFriends.GetUserFriends)
+	router.Get("/users/{userId}/friends", getUserFriends.GetUserFriends)
 	router.Patch("/users/{userId}", updateUser.UpdateUser)
 	router.Delete("/users/{userId}", deleteUser.DeleteUser)
 
